@@ -1,0 +1,24 @@
+<h1>DATE OBJECTS.. TIME</h1>
+
+<script type="text/javascript">
+	
+	function doSomething(){
+
+		document.write("Metal <br>");
+	}
+
+	function printTime(){
+		var now = new Date();
+		var hours = now.getHours();
+		var mins = now.getMinutes();
+		var seconds = now.getSeconds();
+
+		document.write(hours+":"+mins+":"+seconds+"<br>");
+
+	}
+
+	setInterval("doSomething()",1000);
+	setInterval("printTime()",1000);
+
+
+</script>

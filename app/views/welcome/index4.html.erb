@@ -1,0 +1,32 @@
+<h1>Objects</h1>
+
+<script type="text/javascript">
+	
+
+	function person(name,age){
+
+		this.name = name;
+		this.age = age;
+		this.yearsUntilRetire = yearsLeft; //sin parentesis
+	}
+
+	function yearsLeft(){
+		var numYears = 65-this.age;
+		return numYears;
+
+	}
+
+	var bucky = new person("Bucky Roberts", 24);
+
+</script>
+
+
+<p>......</p>
+
+
+<script type="text/javascript">
+	
+	document.write(bucky.name+" is: "+bucky.age+" years old <br>");
+
+	document.write(bucky.name+" has " +bucky.yearsUntilRetire()+" years left until to retire");
+</script>
