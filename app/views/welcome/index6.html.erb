@@ -1,0 +1,47 @@
+<h1>Accessing Forms</h1>
+
+<script type="text/javascript">
+	
+	function validator(){
+
+		if(document.buckysform.thebox.checked){
+
+			alert("Yep, its checked");
+		}
+		else{
+			alert("Nop");
+		}
+
+	}
+
+</script>
+<form name="buckysform">
+	
+	Username: <input type="text" name="usermetal">
+	Password: <input type="password" name="passmetal">
+	<br>
+	<input type="submit" value="Submit!">
+
+	<br>
+	<br>
+
+
+	<input type="checkbox" name="thebox">
+	<input type="button" value="Press Me!" onclick="validator()">
+
+</form>
+
+<script type="text/javascript">
+	
+	var w = document.forms[0].length;
+	document.write("number of forms: "+document.forms.length+"<br>");
+	document.write("length of the form: "+w+"<br>");
+
+
+
+	var x = document.forms[0].elements[0].name;
+	var y = document.buckysform.usermetal.name;
+	document.write(x+"<br>");
+	document.write(y+"<br>");
+
+</script>
